@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Logica de prog</h1>
+    <button onclick="soma()">+</button>
+    <button onclick="sub()">-</button>
+    <button onclick="mult()">*</button>
+    <button onclick="div()">/</button>
+
+    <div id="output"></div>
+
+    <script>
+        
+        let n = parseInt(prompt("Digite um numero"));
+        output.innerHTML = n;
+
+        function soma(){
+            let i = parseInt(prompt("Digite um numero"));
+            n += i;
+            output.innerHTML = n;
+        }
+        function sub(){
+            let i = parseInt(prompt("Digite um numero"));
+            n -= i;
+            output.innerHTML = n;
+        }
+        function mult(){
+            let i = parseInt(prompt("Digite um numero"));
+            n *= i;
+            output.innerHTML = n;
+        }
+        function div(){
+            let i = parseInt(prompt("Digite um numero"));
+            n /= i;
+            output.innerHTML = n;
+        }
+    </script>
+</body>
+</html>

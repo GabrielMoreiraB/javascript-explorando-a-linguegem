@@ -8,14 +8,28 @@
 </head>
 <body>
     <h1>Logica de prog</h1>
+    <button onclick="mostrarTabuada()">Mostrar Tabuada</button>
+    <button onclick="limparTabuada()">Limpar Tabuada</button>
+
     <div id="output"></div>
+
+
+
     <script>
-       var output = document.querySelector ("#output");
-       var msn = "";
-       for (let i = 0; i< 1001; i++) {
-        msn += 'i = ' + i + '<br>';
-       }
+        function mostrarTabuada(){
+            var n = parseInt(prompt("Digite um numero"));
+            var output = document.querySelector ("#output");
+            var msn = '';
+            for (let i = 1; i< 1001; i++) {
+            msn += n +' * ' + i + '=' + (n*i) + '<br>';
+            }
        output.innerHTML = msn;
+        }
+
+        function limparTabuada(){
+            msn = '';
+            output.innerHTML = msn;
+        }
     </script>
 </body>
 </html>
