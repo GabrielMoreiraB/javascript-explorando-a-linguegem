@@ -20,9 +20,23 @@
         let n = parseInt(prompt("Digite um numero"));
         output.innerHTML = n;
 
-        function calc(y){
+        function calc(simbolo){
             let i = parseInt(prompt("Digite um numero"));
-            n = n y i;
+            switch(simbolo){
+                case '+':
+                    n += i;
+                    break;
+                case '-':
+                    n -=  i;
+                    break;
+                case '*':
+                    n *=  i;
+                    break;
+                case '/':
+                    n /=  i;
+                    break;
+            }
+            
             output.innerHTML = n;
         }
         
