@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Logica de prog</h1>
+    <button onclick="inicioCalc('+')">+</button>
+    <button onclick="inicioCalc('-')">-</button>
+    <button onclick="inicioCalc('*')">*</button>
+    <button onclick="inicioCalc('/')">/</button>
+
+    <div id="output"></div>
+
+    <script>
+        
+        let n = parseInt(prompt("Digite um numero"));
+        2
+        escreve(n);
+
+        function inicioCalc(simbolo){
+            let n1 = parseInt(document.querySelector('#output').textContent);
+            let n2 = parseInt(prompt("Digite outro numero"));
+            let msg = calc(simbolo, n1, n2 );
+            escreve(msg);
+        }
+
+        function escreve(mensagem){
+
+            var output = document.querySelector('#output');
+            output.innerHTML = mensagem;
+        }
+
+        function calc(simbolo, n1, n2 ){
+            let numeroCalculado = null;
+            switch(simbolo){
+                case '+':
+                    numeroCalculado = n1 + n2;
+                    break;
+                case '-':
+                    numeroCalculado = n1 - n2;
+                    break;
+                case '*':
+                    numeroCalculado = n1 * n2;
+                    break;
+                case '/':
+                    numeroCalculado = n1 / n2;
+                    break;
+            }
+            
+            return numeroCalculado;
+        }
+        
+    </script>
+</body>
+</html>
