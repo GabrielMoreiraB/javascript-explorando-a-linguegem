@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Logica de prog</h1>
+    <button onclick="areaAlert()"> Area com alert </button>
+    <button onclick="areaOutput()">Mostrar area no output</button>
+
+    <div id="output"></div>
+
+    <script>
+            function area(l,a){
+            var area = l*a;
+            return area;
+        }
+        
+        function areaAlert(){
+            let largura = parseFloat(prompt("Digite a largura"));
+            let altura = parseFloat(prompt("Digite a altura"));
+            var area = largura * altura;
+            alert('A area total é: ' + area);
+        }
+
+        function areaOutput(){
+            let largura = parseFloat(prompt("Digite a largura"));
+            let altura = parseFloat(prompt("Digite a altura"));            
+            var output = document.querySelector ("#output");
+
+            var area = largura * altura;
+            output.innerHTML = ('A area total é: ' + area);
+        }
+        
+    </script>
+</body>
+</html>
