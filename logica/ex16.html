@@ -8,28 +8,15 @@
 </head>
 <body>
     <h1>Logica de prog</h1>
-    <button onclick="areaOutput()">Mostrar area no output</button>
-
-    <div id="output"></div>
 
     <script>
-        function areaOutput(){
-            let largura = parseFloat(prompt("Digite a largura"));
-            let altura = parseFloat(prompt("Digite a altura"));  
-            var area = areaRec(altura,largura);
-            var output = document.querySelector ("#output");
-            
-            output.innerHTML = ('A area total é: ' + area);
-        }
+        var dias = new Array('domingo', 'segunda', 'terça', 'quarta', 'quinta', 'sexta', 'sabado');
 
-        function areaRec(a,b){
-            if(isNaN(a) || isNaN(b)){
-                throw new Error ('Digite uim valor valido.');
-                return '';
-            }
-            return (a*b);
-        }
-        areaOutput()
+        var hoje = new Date();
+        var diaSemana = hoje.getDay();
+
+        if (dias[])
+
     </script>
 </body>
 </html>
