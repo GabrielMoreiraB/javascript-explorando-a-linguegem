@@ -1,4 +1,5 @@
-
+import { cliente } from "./Cliente.js";
+import { contaCorrente } from "./ContaCorrente.js";
 
 const cliente1 = new cliente();
     cliente1.nome = "Ricardo";
