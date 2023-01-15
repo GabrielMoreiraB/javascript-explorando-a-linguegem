@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Logica de prog</h1>
+
+    <script>
+        var arr = new Array(25, 30, 45, 28, 0, 12, 78, 64);
+
+        var soma = 0;
+
+        function somaPar(){
+            for(let i=0; i < arr.length; i++){
+                if( !isNaN(arr[i]) && (arr[i] % 2 == 0) ){
+                    soma = soma + arr[i];
+                }
+            }
+            alert('A soma de numeros pares é: ' + soma);
+        }
+        somaPar()
+        
+
+    </script>
+</body>
+</html>
